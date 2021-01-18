@@ -1,14 +1,12 @@
+/* -------- RESET BROWSER -------- */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}
+/* -------- HEADER -------- */
 
 header{
     width: 100%;
@@ -27,15 +25,202 @@ header{
 .logo{
     color: black;
     font-family: 'Shrikhand';
-    font-size: 40px;
+    font-size: 32px;
     text-decoration: none;
-    border: black 1px solid;
 }
 
-.map-city{
-    text-align: center;
-    border: solid black 1px;
-    background-color: #DCDCDC;
+.chosen-city{
     width: 100%;
+    height: 50px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chosen-city i{
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.chosen-city p{
+    font-size: 18px;
+}
+
+.contentbot-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    background-color: #f6f6f6;
+    padding: 30px 0 30px 0;
+    width: 100%;
+}
+
+.contentbot-header h2{
+    font-weight: bold;
+    font-size: 26px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contentbot-header p{
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button-1 {
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border-radius: 50px;
+    height: 60px;
+    width: 250px;
+}
+
+.button-1 a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* -------- OPERATION -------- */
+
+#operation-container{
+    padding: 30px 15px 30px 15px;
+}
+
+#operation-container h2{
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.card-operation{
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    display: flex;
+    background-color: #f6f6f6;
+    margin: 15px;
+    width: 310px;
     height: 70px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card-operation-content{
+    left: -12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-operation-content p{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px ;
+}
+
+.card-operation-content i{
+    color: grey;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+.notif-round{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    background-color: #9356DC;
+    color:white;
+    text-align: center;
+}
+
+.card-operation:hover {
+    background-color : rgba(147,86,220,0.25) ;
+}
+
+.card-operation:hover .card-operation-content i{
+    color: #9356DC;
+}
+
+/* -------- RESTAURANT -------- */
+
+#restaurant-section{
+    background-color: #f6f6f6;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#restaurant-section h2{
+    align-self: flex-start;
+}
+
+.card-restaurant{
+    border-radius: 20px;
+    margin: 20px;
+    background-color: white;
+    width: 95%;
+    height: 250px;
+}
+
+.card-restaurant img{
+    object-fit: cover;
+    width: 100%;
+    height: 170px;
+    border-radius: 20px 20px 0 0; 
+}
+
+.infos-restaurant{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos-restaurant i{
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+
+/* ------------ FOOTER ---------- */
+
+footer{
+    background-color: #353535;
+    color: white;
+    padding: 15px 0 15px 15px;
+}
+
+footer h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer ol li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+footer ol li i{
+    font-size: 10px;
+}
+
+.icon-footer1{
+    margin-right: 15px;
+}
+
+.icon-footer2{
+    margin-right: 11px;
 }

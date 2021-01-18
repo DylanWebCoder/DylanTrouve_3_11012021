@@ -1,0 +1,152 @@
+/* -------- RESET BROWSER -------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+/* -------- HEADER -------- */
+
+header{
+    width: 100%;
+}
+
+.banner-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    background-color:white ;
+}
+
+.logo{
+    color: black;
+    font-family: 'Shrikhand';
+    font-size: 32px;
+    text-decoration: none;
+    position: relative;
+    left: -20px;
+}
+
+.arrow-back{
+    color: black;
+    font-size: 20px;
+    position: relative;
+    left: -70px;
+}
+
+header img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* -------- MAIN -------- */
+main {
+    width: 100%;
+    top: -40px;
+    position: relative;
+    padding: 30px 15px;
+    border-radius: 40px 40px 0 0;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+main h3{
+    width: 40px;
+    margin: 10px 10px 20px 10px;
+    text-transform: uppercase;
+    border-bottom: solid 3px #99e2d0;
+}
+
+.button-1 {
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FF79DA,#9356DC);
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+}
+
+.button-1 a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.title-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.content-starters, .content-dishes, .content-desserts{
+    width: 100%;
+    margin: 0 20px 20px 20px;
+}
+
+
+/* ----------- Card Content --------- */
+
+.card-content{
+    padding: 10px;
+    width: 320px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 40px -8px grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-right{
+    align-self: flex-end;
+}
+
+
+
+/* ------------ FOOTER ---------- */
+
+footer{
+    background-color: #353535;
+    color: white;
+    padding: 15px 0 15px 15px;
+}
+
+footer h4{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer ol li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+footer ol li i{
+    font-size: 10px;
+}
+
+.icon-footer1{
+    margin-right: 15px;
+}
+
+.icon-footer2{
+    margin-right: 11px;
+}
