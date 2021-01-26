@@ -30,7 +30,7 @@ header{
     font-size: 32px;
     text-decoration: none;
     position: relative;
-    left: -20px;
+    left: -10px;
 }
 
 .arrow-back{
@@ -62,6 +62,7 @@ main {
 
 
 main h3{
+    font-family: 'Roboto';
     padding-bottom: 5px;
     width: 40px;
     margin: 10px 10px 20px 10px;
@@ -86,7 +87,7 @@ main h3{
     text-decoration: none;
 }
 .button-1:hover{
-    opacity: 0.9;
+    opacity: 0.8;
     box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.85);
     transition: 0.5s;
 }
@@ -100,6 +101,12 @@ main h3{
     padding: 10px;
 }
 
+.title-container h2{
+    font-family: 'Shrikhand';
+    font-weight: 400;
+    font-size: 27px;
+}
+
 .content-starters, .content-dishes, .content-desserts{
     width: 100%;
     margin: 0 20px 20px 20px;
@@ -108,6 +115,10 @@ main h3{
 .bouton-like{
     display: flex;
     cursor: pointer;
+}
+
+.bouton-like i{
+    font-size: 25px;
 }
 
 .like-full{
@@ -134,29 +145,25 @@ main h3{
     margin: 10px;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0px 0px 40px -8px grey;
+    box-shadow: 0px 0px 20px -8px grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-overflow: ellipsis;
-    transition: 0.5s ease 0s;
-    animation: 2s ease 1 normal forwards running animation;
 }
 
-@keyframes animation{
-    0%{
-        transform:translateY(-10px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 100;
-    }
-}
 
 .content-left{
     padding-left: 10px;
-    text-overflow: ellipsis;
+}
+
+.content-left h4{
+    margin-bottom: 5px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.content-left p{
+    font-size: 15px;
 }
 
 .checkbox{
@@ -182,11 +189,12 @@ main h3{
 }
 
 .content-right p{
+    font-weight: 900;
     align-self: flex-end;
     margin: 0 10px 10px 0;
 }
 
-.card-content:hover .checkbox{
+/* .card-content:hover .checkbox{
     opacity: 1;
     width: 60px;
     transition: .75s;
@@ -195,6 +203,44 @@ main h3{
     transform: rotate(720deg);
     transition: .75s;
 }
+
+*/
+
+.card-content:hover .checkbox{
+    animation-duration: 0.75s;
+    animation-name: slide-checkbox;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-checkbox{
+    0%{
+        opacity: 0;
+        width: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 60px;
+    }
+}
+
+.card-content:hover .checkbox i{
+    animation-duration: 0.75s;
+    animation-name: rotate-checkbox;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate-checkbox{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
 
 /* ------------ FOOTER ---------- */
 
@@ -224,4 +270,39 @@ footer ol li i{
 
 .icon-footer2{
     margin-right: 11px;
+}
+
+
+/* -------- RESPONSIVE -------- */
+
+@media only screen and (min-width:920px){
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    footer h4{
+        border-right: 1px solid white;
+        font-size: 25px;
+        padding-right: 10px;
+        margin: 0 20px 0 0;
+    }
+    footer ol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer ol li{
+        font-size: 20px;
+        margin-right: 25px;
+        padding-right: 10px;
+        border-right: 1px solid white;
+    }
+    footer ol li:nth-child(4){
+        border-right: none;
+    }
+    footer ol li i{
+        font-size: 15px;
+    }
 }

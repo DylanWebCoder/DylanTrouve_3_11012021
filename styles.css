@@ -91,7 +91,7 @@ header{
 }
 
 .button-1:hover{
-    opacity: 0.9;
+    opacity: 0.8;
     box-shadow: 0px 0px 30px -6px rgba(0,0,0,0.85);
     transition: 0.5s;
 }
@@ -99,14 +99,18 @@ header{
 /* -------- OPERATION -------- */
 
 #operation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 30px 15px 30px 15px;
 }
 
 #operation-container h2{
+    align-self: flex-start;
     font-style: normal;
     font-weight: 400;
     font-family: 'Shrikhand', sans-serif;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 26px;
 }
 
@@ -178,6 +182,13 @@ header{
     align-self: flex-start;
 }
 
+.card-restaurant-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .card-restaurant{
     border-radius: 20px;
     margin: 20px;
@@ -246,6 +257,8 @@ footer{
 }
 
 footer h4{
+    font-family: 'Shrikhand';
+    font-weight: 400;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -266,3 +279,59 @@ footer ol li i{
 .icon-footer2{
     margin-right: 11px;
 }
+
+
+
+/* -------- RESPONSIVE ------ */
+@media only screen and (min-width:585px){
+    .card-restaurant{
+        width: 533px;
+    }
+    .card-restaurant a{
+        width: 533px;
+    }
+}
+
+@media only screen and (min-width:920px){
+    .card-restaurant-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    footer h4{
+        border-right: 1px solid white;
+        font-size: 25px;
+        padding-right: 10px;
+        margin: 0 20px 0 0;
+    }
+    footer ol{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    footer ol li{
+        font-size: 20px;
+        margin-right: 25px;
+        padding-right: 10px;
+        border-right: 1px solid white;
+    }
+    footer ol li:nth-child(4){
+        border-right: none;
+    }
+    footer ol li i{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:1050px){
+    .card-operation-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
