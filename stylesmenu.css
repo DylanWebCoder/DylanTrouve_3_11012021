@@ -57,6 +57,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 15px;
 }
 
 
@@ -108,9 +109,9 @@ main h3{
 }
 
 .content-starters, .content-dishes, .content-desserts{
-    width: 100%;
-    margin: 0 20px 20px 20px;
+    margin-bottom: 40px;
 }
+
 
 .bouton-like{
     display: flex;
@@ -140,34 +141,44 @@ main h3{
 /* ----------- Card Content --------- */
 
 .card-content{
-    width: 320px;
+    width: 319px;
     height: 70px;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 0px 0px 20px -8px grey;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 
 .content-left{
     padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .content-left h4{
     margin-bottom: 5px;
     font-weight: 900;
     font-size: 18px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .content-left p{
     font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .checkbox{
-    opacity: 0;
     font-size: 22px;
     width: 0px;
     color: white;
@@ -176,10 +187,12 @@ main h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 500ms;
 }
 
 .checkbox i{
-    transform: rotate(180deg);
+    transform: rotate(0);
+    transition: all 500ms;
 }
 
 .content-right{
@@ -194,53 +207,12 @@ main h3{
     margin: 0 10px 10px 0;
 }
 
-/* .card-content:hover .checkbox{
-    opacity: 1;
-    width: 60px;
-    transition: .75s;
-}
-.card-content:hover .checkbox i{
-    transform: rotate(720deg);
-    transition: .75s;
-}
-
-*/
-
 .card-content:hover .checkbox{
-    animation-duration: 0.75s;
-    animation-name: slide-checkbox;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    width: 60px;
 }
-
-@keyframes slide-checkbox{
-    0%{
-        opacity: 0;
-        width: 0;
-    }
-    100%{
-        opacity: 1;
-        width: 60px;
-    }
-}
-
 .card-content:hover .checkbox i{
-    animation-duration: 0.75s;
-    animation-name: rotate-checkbox;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    transform: rotate(360deg);
 }
-
-@keyframes rotate-checkbox{
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-
 
 /* ------------ FOOTER ---------- */
 
@@ -251,6 +223,8 @@ footer{
 }
 
 footer h4{
+    font-family: 'Shrikhand';
+    font-weight: 400;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -272,10 +246,201 @@ footer ol li i{
     margin-right: 11px;
 }
 
+/* --------------------- APPARITION MENU ------------------- */
+/* --------------------------- STARTERS -------------------------------- */
+
+.content-starters .card-content:nth-child(2){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein1;
+    animation-duration: 700ms;
+}
+@keyframes fadein1{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-starters .card-content:nth-child(3){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein2;
+    animation-duration: 700ms;
+    animation-delay: 200ms;
+}
+
+@keyframes fadein2{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-starters .card-content:nth-child(4){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein3;
+    animation-duration: 700ms;
+    animation-delay: 400ms;
+}
+
+@keyframes fadein3{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-starters .card-content:nth-child(5){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein3;
+    animation-duration: 700ms;
+    animation-delay: 600ms;
+}
+
+@keyframes fadein4{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* --------------------------- DISHES -------------------------------- */
+.content-dishes .card-content:nth-child(2){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein1;
+    animation-duration: 700ms;
+}
+@keyframes fadein1{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-dishes .card-content:nth-child(3){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein2;
+    animation-duration: 700ms;
+    animation-delay: 200ms;
+}
+
+@keyframes fadein2{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-dishes .card-content:nth-child(4){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein3;
+    animation-duration: 700ms;
+    animation-delay: 400ms;
+}
+
+@keyframes fadein3{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* --------------------------- DESSERTS -------------------------------- */
+.content-desserts .card-content:nth-child(2){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein1;
+    animation-duration: 700ms;
+}
+@keyframes fadein1{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-desserts .card-content:nth-child(3){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein2;
+    animation-duration: 700ms;
+    animation-delay: 200ms;
+}
+
+@keyframes fadein2{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.content-desserts .card-content:nth-child(4){
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadein3;
+    animation-duration: 700ms;
+    animation-delay: 400ms;
+}
+
+@keyframes fadein3{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
 
 /* -------- RESPONSIVE -------- */
 
-@media only screen and (min-width:920px){
+@media only screen and (min-width:926px){
     footer{
         display: flex;
         flex-direction: row;
@@ -304,5 +469,18 @@ footer ol li i{
     }
     footer ol li i{
         font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .card-content{
+        width: 350px;
+        height: 80px;
+    }
+    .container-all-menus{
+        display: flex;  
+        flex-direction: row;
+        flex-wrap: wrap;  
+        justify-content: center;
     }
 }
