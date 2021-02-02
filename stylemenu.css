@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
 
 body{
@@ -234,6 +235,13 @@ footer ol li{
     list-style: none;
 }
 
+footer ol li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-weight: normal;
+}
+
 footer ol li i{
     font-size: 10px;
 }
@@ -246,64 +254,39 @@ footer ol li i{
     margin-right: 11px;
 }
 
-/* --------------------- APPARITION MENU ------------------- */
+/* ------------------------ APPARITION MENU ----------------------------- */
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(+20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 /* --------------------------- STARTERS -------------------------------- */
 
 .content-starters .card-content:nth-child(2){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein1;
+    animation-name: fadein;
     animation-duration: 700ms;
 }
-@keyframes fadein1{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-starters .card-content:nth-child(3){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein2;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 200ms;
 }
-
-@keyframes fadein2{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-starters .card-content:nth-child(4){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein3;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 400ms;
 }
-
-@keyframes fadein3{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-starters .card-content:nth-child(5){
     opacity: 0;
     animation-fill-mode: forwards;
@@ -312,133 +295,51 @@ footer ol li i{
     animation-delay: 600ms;
 }
 
-@keyframes fadein4{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-
 /* --------------------------- DISHES -------------------------------- */
 .content-dishes .card-content:nth-child(2){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein1;
+    animation-name: fadein;
     animation-duration: 700ms;
 }
-@keyframes fadein1{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-dishes .card-content:nth-child(3){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein2;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 200ms;
 }
-
-@keyframes fadein2{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-dishes .card-content:nth-child(4){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein3;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 400ms;
-}
-
-@keyframes fadein3{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
 }
 
 /* --------------------------- DESSERTS -------------------------------- */
 .content-desserts .card-content:nth-child(2){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein1;
+    animation-name: fadein;
     animation-duration: 700ms;
 }
-@keyframes fadein1{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-desserts .card-content:nth-child(3){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein2;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 200ms;
 }
-
-@keyframes fadein2{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
 .content-desserts .card-content:nth-child(4){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein3;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 400ms;
 }
 
-@keyframes fadein3{
-    0%{
-        opacity: 0;
-        transform: translateY(+20px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-
-
-
-/* -------- RESPONSIVE -------- */
+/* ----------------------------------------- RESPONSIVE -------------------------------------------------- */
 
 @media only screen and (min-width:926px){
     footer{
