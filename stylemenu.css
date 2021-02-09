@@ -85,7 +85,7 @@ main h3{
 
 .button-1 a{
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     text-decoration: none;
 }
 .button-1:hover{
@@ -107,6 +107,10 @@ main h3{
     font-family: 'Shrikhand';
     font-weight: 400;
     font-size: 27px;
+}
+
+.container-all-menus h3{
+    font-weight: normal;
 }
 
 .content-starters, .content-dishes, .content-desserts{
@@ -225,8 +229,8 @@ footer{
 
 footer h4{
     font-family: 'Shrikhand';
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: normal;
+    font-size: 18px;
     margin-bottom: 15px;
 }
 
@@ -254,7 +258,7 @@ footer ol li i{
     margin-right: 11px;
 }
 
-/* ------------------------ APPARITION MENU ----------------------------- */
+/* ----------------------------------- APPARITION MENU --------------------------------------- */
 @keyframes fadein{
     0%{
         opacity: 0;
