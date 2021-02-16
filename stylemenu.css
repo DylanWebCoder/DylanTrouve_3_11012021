@@ -61,9 +61,8 @@ main {
     padding: 30px 15px;
 }
 
-
-
 main h3{
+    font-weight: normal;
     font-family: 'Roboto';
     padding-bottom: 5px;
     width: 40px;
@@ -109,11 +108,7 @@ main h3{
     font-size: 27px;
 }
 
-.container-all-menus h3{
-    font-weight: normal;
-}
-
-.content-starters, .content-dishes, .content-desserts{
+#starters, #dishes, #desserts{
     margin-bottom: 40px;
 }
 
@@ -157,7 +152,6 @@ main h3{
     align-items: center;
     overflow: hidden;
 }
-
 
 .content-left{
     padding-left: 10px;
@@ -234,19 +228,19 @@ footer h4{
     margin-bottom: 15px;
 }
 
-footer ol li{
+footer ul li{
     margin-bottom: 5px;
     list-style: none;
 }
 
-footer ol li a{
+footer ul li a{
     text-decoration: none;
     cursor: pointer;
     color: white;
     font-weight: normal;
 }
 
-footer ol li i{
+footer ul li i{
     font-size: 10px;
 }
 
@@ -271,49 +265,49 @@ footer ol li i{
 }
 /* --------------------------- STARTERS -------------------------------- */
 
-.content-starters .card-content:nth-child(2){
+#starters .card-content:nth-child(2){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
 }
-.content-starters .card-content:nth-child(3){
+#starters .card-content:nth-child(3){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 200ms;
 }
-.content-starters .card-content:nth-child(4){
+#starters .card-content:nth-child(4){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 400ms;
 }
-.content-starters .card-content:nth-child(5){
+#starters .card-content:nth-child(5){
     opacity: 0;
     animation-fill-mode: forwards;
-    animation-name: fadein3;
+    animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 600ms;
 }
 
 /* --------------------------- DISHES -------------------------------- */
-.content-dishes .card-content:nth-child(2){
+#dishes .card-content:nth-child(2){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
 }
-.content-dishes .card-content:nth-child(3){
+#dishes .card-content:nth-child(3){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 200ms;
 }
-.content-dishes .card-content:nth-child(4){
+#dishes .card-content:nth-child(4){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
@@ -322,20 +316,20 @@ footer ol li i{
 }
 
 /* --------------------------- DESSERTS -------------------------------- */
-.content-desserts .card-content:nth-child(2){
+#desserts .card-content:nth-child(2){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
 }
-.content-desserts .card-content:nth-child(3){
+#desserts .card-content:nth-child(3){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
     animation-duration: 700ms;
     animation-delay: 200ms;
 }
-.content-desserts .card-content:nth-child(4){
+#desserts .card-content:nth-child(4){
     opacity: 0;
     animation-fill-mode: forwards;
     animation-name: fadein;
@@ -345,7 +339,7 @@ footer ol li i{
 
 /* ----------------------------------------- RESPONSIVE -------------------------------------------------- */
 
-@media only screen and (min-width:926px){
+@media only screen and (min-width:976px){
     footer{
         display: flex;
         flex-direction: row;
@@ -358,21 +352,21 @@ footer ol li i{
         padding-right: 10px;
         margin: 0 20px 0 0;
     }
-    footer ol{
+    footer ul{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    footer ol li{
+    footer ul li{
         font-size: 20px;
         margin-right: 25px;
         padding-right: 10px;
         border-right: 1px solid white;
     }
-    footer ol li:nth-child(4){
+    footer ul li:nth-child(4){
         border-right: none;
     }
-    footer ol li i{
+    footer ul li i{
         font-size: 15px;
     }
 }
@@ -382,10 +376,10 @@ footer ol li i{
         width: 350px;
         height: 80px;
     }
-    .container-all-menus{
-        display: flex;  
-        flex-direction: row;
-        flex-wrap: wrap;  
+    #menu-container{
+        display: flex;
         justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }

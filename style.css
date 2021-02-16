@@ -358,19 +358,19 @@ footer h4{
     margin-bottom: 15px;
 }
 
-footer ol li{
+footer ul li{
     margin-bottom: 5px;
     list-style: none;
 }
 
-footer ol li a{
+footer ul li a{
     text-decoration: none;
     cursor: pointer;
     color: white;
     font-weight: normal;
 }
 
-footer ol li i{
+footer ul li i{
     font-size: 10px;
 }
 
@@ -409,21 +409,21 @@ footer ol li i{
         padding-right: 10px;
         margin: 0 20px 0 0;
     }
-    footer ol{
+    footer ul{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    footer ol li{
+    footer ul li{
         font-size: 20px;
         margin-right: 25px;
         padding-right: 10px;
         border-right: 1px solid white;
     }
-    footer ol li:nth-child(4){
+    footer ul li:nth-child(4){
         border-right: none;
     }
-    footer ol li i{
+    footer ul li i{
         font-size: 15px;
     }
 }

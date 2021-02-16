@@ -2,6 +2,7 @@
 <html lang="FR">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="stylemenu.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://kit.fontawesome.com/2684e8fc36.js" crossorigin="anonymous"></script>
@@ -11,7 +12,6 @@
     </head>
     <body>
         <header>   
-            
             <div class="banner-logo">
                 <a class="arrow-back" href="index.html"><i class="fas fa-arrow-left"></i></a>
                 <a class="logo" href="#">ohmyfood</a>
@@ -19,8 +19,8 @@
             <img src="restaurants/delice.jpg" alt="Restaurant - Le délice des sens">
         </header>
 
-        <main id="menu-container">
-            <div class="title-container">
+        <main>
+            <section class="title-container">
                 <h2>Le délice des sens</h2>
                 <div class="bouton-like">
                     <div class="like-empty">
@@ -30,9 +30,9 @@
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
-            </div>
-            <div class="container-all-menus">
-                <div class="content-starters">
+            </section>
+            <article id="menu-container">
+                <section id="starters">
                     <h3>Entrées</h3>
                     <div class="card-content">
                         <div class="content-left">
@@ -70,8 +70,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="content-dishes">
+                </section>
+                <section id="dishes">
                     <h3>Plats</h3>
                     <div class="card-content">
                         <div class="content-left">
@@ -109,8 +109,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="content-desserts">
+                </section>
+                <section id="desserts">
                     <h3>Desserts</h3>
                     <div class="card-content">
                         <div class="content-left">
@@ -148,8 +148,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+            </article>
             <div class="button-1">
                 <a href="#">Commander</a>
             </div>
@@ -157,12 +157,12 @@
 
         <footer>
             <h4>ohmyfood</h4>
-            <ol>
+            <ul>
                 <li><i class="fas fa-utensils icon-footer1"></i>Proposer un restaurant</li>
                 <li><i class="fas fa-hands-helping icon-footer2"></i>Devenir partenaire</li>
                 <li>Mentions légales</li>
                 <li><a class="mail" href="mailto:#">Contact</a></li>
-            </ol>
+            </ul>
         </footer>
     </body>
 </html>
